@@ -11,29 +11,29 @@
 Config::Config() {
     // Default configuration
     node["column_limit"] = 80;
-    node["indent_width"] = 4;
+    node["indent_width"] = 2;
     node["use_tab"] = false;
-    node["tab_width"] = 4;
-    node["continuation_indent_width"] = 4;
+    node["tab_width"] = 2;
+    node["continuation_indent_width"] = 2;
     node["spaces_before_call"] = 1;
 
-    node["keep_simple_control_block_one_line"] = true;
-    node["keep_simple_function_one_line"] = true;
+    node["keep_simple_control_block_one_line"] = false;
+    node["keep_simple_function_one_line"] = false;
 
-    node["align_args"] = true;
+    node["align_args"] = false;
     node["break_after_functioncall_lp"] = false;
     node["break_before_functioncall_rp"] = false;
     node["spaces_inside_functioncall_parens"] = false;
     node["spaces_inside_functiondef_parens"] = false;
 
-    node["align_parameter"] = true;
+    node["align_parameter"] = false;
     node["chop_down_parameter"] = false;
     node["break_after_functiondef_lp"] = false;
     node["break_before_functiondef_rp"] = false;
 
     node["align_table_field"] = true;
     node["break_after_table_lb"] = true;
-    node["break_before_table_rb"] = true;
+    node["break_before_table_rb"] = false;
     node["chop_down_table"] = false;
     node["chop_down_kv_table"] = true;
     node["table_sep"] = ",";
